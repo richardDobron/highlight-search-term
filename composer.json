@@ -1,0 +1,48 @@
+{
+    "name": "richarddobron/highlight-search-term",
+    "description": "Lightweight PHP library designed to highlight search terms in text.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "dobron\\Highlight\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "dobron\\Highlight\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Richard Dobroň"
+        },
+        {
+            "name": "Yanick Witschi",
+            "email": "yanick.witschi@terminal42.ch"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "wamania/php-stemmer": "^3.0",
+        "toflar/state-set-index": "^3.0",
+        "nitotm/efficient-language-detector": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpstan/phpstan": "^2.0",
+        "friendsofphp/php-cs-fixer": "^3.2.1"
+    },
+    "scripts": {
+        "post-merge": "composer install",
+        "tests": "@php vendor/bin/phpunit --colors=always --testdox",
+        "functional-tests": "@php vendor/bin/phpunit --colors=always --testsuite=functional",
+        "fix-style": "@php vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --allow-risky=yes",
+        "phpstan": "@php vendor/bin/phpstan analyse"
+    },
+    "scripts-descriptions": {
+        "tests": "Run all tests."
+    }
+}
