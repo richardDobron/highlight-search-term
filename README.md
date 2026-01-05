@@ -24,7 +24,6 @@ Here’s how to use the library to highlight search terms:
 use dobron\Highlight\Config\TypoTolerance;
 use dobron\Highlight\Configuration;
 use dobron\Highlight\HighlightFactory;
-use dobron\Highlight\SearchParameters;
 
 $configuration = Configuration::create()
     ->withLanguages(['en'])
@@ -59,7 +58,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## 🧪 Testing
 
 ```shell
-$ composer test
+$ composer tests
 ```
 
 ## 🤝 Contributing
@@ -73,6 +72,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 - [Yanick Witschi][link-loupe]
 
 ## ⚖️ License
+
 This repository is MIT licensed, as found in the [LICENSE](LICENSE) file.
 
 [link-author]: https://github.com/richardDobron

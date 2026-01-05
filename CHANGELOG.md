@@ -4,4 +4,8 @@ Contains only a redacted list of new features. For bugfixes and more details, ch
 
 ## 0.1.0 - Initial version 🎉
 
-- Initial release of the library with powerful functionality for highlighting search terms in text!
+- Initial release of the library for highlighting search terms in text!
+
+## 0.1.1
+
+- Fixed UTF-8 encoding issue in regex offset

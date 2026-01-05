@@ -39,7 +39,8 @@
         "post-merge": "composer install",
         "tests": "@php vendor/bin/phpunit --colors=always --testdox",
         "functional-tests": "@php vendor/bin/phpunit --colors=always --testsuite=functional",
-        "fix-style": "@php vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --allow-risky=yes",
+        "fix-style": "@php vendor/bin/php-cs-fixer fix --allow-risky=yes",
+        "check-style": "@php vendor/bin/php-cs-fixer fix --allow-risky=yes --dry-run",
         "phpstan": "@php vendor/bin/phpstan analyse"
     },
     "scripts-descriptions": {

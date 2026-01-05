@@ -7,7 +7,7 @@ We accept contributions via Pull Requests on [Github](https://github.com/richard
 
 ## Pull Requests
 
-- **[PSR-12 Coding Standard](https://www.php-fig.org/psr/psr-12/)**
+- **[PSR-12 Coding Standard](https://www.php-fig.org/psr/psr-12/)** - Check the code style with ``$ composer check-style`` and fix it with ``$ composer fix-style``.
 
 - **Add tests!** - Your patch won't be accepted if it doesn't have tests.
 
