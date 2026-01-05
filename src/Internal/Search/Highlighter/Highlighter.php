@@ -161,7 +161,7 @@ class Highlighter
 
     /**
      * @param array<array{start:int, length:int, stopword:bool}> $matches
-     * @return array<array{start:int, length:int, stopword:bool}> $matches
+     * @return array<array{start:int, length:int, stopword:bool}>
      */
     private function removeStopWordMatches(array $matches): array
     {
